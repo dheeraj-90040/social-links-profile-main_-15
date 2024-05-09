@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary--: hsl(0, 0%, 100%);
+    --secondry--: hsl(0, 0%, 8%);
+    --accent--: hsl(75, 94%, 57%);
+    --grey--: hsl(0, 0%, 20%);
+    --dgray--: hsl(0, 0%, 12%);
+    --front--: "Inter", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: var(--secondry--);
+}
+
+.container .box {
+    width: 24em;
+    height: 40em;
+    background-color: var(--dgray--);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    gap: 15px;
+}
+
+.container .box .profile_pic {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.container .box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary--);
+    font-family: var(--front--);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 16px;
+}
+
+.container .box h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--accent--);
+    font-family: var(--front--);
+}
+
+.container .box .quote {
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--primary--);
+    font-family: var(--front--);
+    margin-top: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container .box .links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.container .box .links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary--);
+    text-align: center;
+    font-family: var(--front--);
+    background-color: var(--grey--);
+    padding: 14px 30px;
+    width: 100%;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+.container .box .links a:hover {
+    background-color: var(--accent--);
+    color: var(--secondry--);
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 12px;
+}
